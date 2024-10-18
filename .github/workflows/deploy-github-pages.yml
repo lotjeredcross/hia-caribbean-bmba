@@ -42,15 +42,16 @@ env:
   # A (short) name, visible in the top (navigation-)bar and in the browser's tab/window-title (and search-engine results)
   TXT_APP_NAME: 'HIA Caribbean \n Brach Meeting and Board Academy'
   # An absolute/data-URL to an image, visible in the top (navigation-)bar
-  TXT_APP_LOGO_URL: ''
+  TXT_APP_LOGO_URL: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_the_Red_Cross.svg'
   # The first heading, (only) visible on the main-page
-  TXT_MAIN_PAGE_HEADER: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_the_Red_Cross.svg'
+  TXT_MAIN_PAGE_HEADER: 'Information and FAQ for Caribbean Branch Meeting and Board Academy 2024'
   # The (optional) introduction text, (only) visible on the main-page.
   # Can be multiple-lines of Markdown syntax or contain some HTML. Newlines need to be specified with `\n` or `<br />`.
   TXT_MAIN_PAGE_INTRO: >-
     This Helpful Information web-App (HIA) is made to brief you for and answer your frequently asked questions about the Caribbean Branch Meeting and Board Academy (7 - 10 November 2024)
     \n
     \n
+    Please click on the button below to access all information
   #
   # An (optional) notice on the top of the screen, can be overwritten on sub-pages per-region by each region's sheet.
   TXT_MAIN_PAGE_NOTICE: ''
@@ -171,8 +172,7 @@ jobs:
           NG_PRODUCTION: 'true'
           GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
           GOOGLE_SHEETS_API_URL: 'https://sheets.googleapis.com/v4/spreadsheets'
-          MATOMO_CONNECTION_STRING: ${{ vars.MATOMO_CONNECTION_STRING }}
-          AI_CONNECTION_STRING: ${{ vars.AI_CONNECTION_STRING }}
+          AI_CONNECTION_STRING: ${{ secrets.AI_CONNECTION_STRING }}
 
       - name: Add generic files
         run: 'cp -r ./public/. www/'
