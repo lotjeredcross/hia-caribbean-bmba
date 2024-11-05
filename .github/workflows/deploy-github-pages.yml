@@ -40,7 +40,7 @@ env:
   # ###########################################################################
   #
   # A (short) name, visible in the top (navigation-)bar and in the browser's tab/window-title (and search-engine results)
-  TXT_APP_NAME: 'HIA Caribbean \n Brach Meeting and Board Academy'
+  TXT_APP_NAME: 'HIA \n Caribbean Branch Meeting and Academy 2024'
   # An absolute/data-URL to an image, visible in the top (navigation-)bar
   TXT_APP_LOGO_URL: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_the_Red_Cross.svg'
   # The first heading, (only) visible on the main-page
